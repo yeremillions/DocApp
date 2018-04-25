@@ -1,0 +1,25 @@
+    <template name="overlay">
+        <button id="open">Open Menu!</button>
+        <button id="close">Close Menu!</button>
+    </template>
+
+    <template name="menu">
+        <div id="page">
+            <div class="header fixed">
+                <a href="#my-menu"></a>
+                jQuery Mobile Menu example
+            </div>
+            <div class="content">
+            {{> overlay}}
+        </div>
+
+            <!-- Start of menu -->
+            <nav id="my-menu">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about/">About us</a></li>
+                    <li><a href="/contact/">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+</template>

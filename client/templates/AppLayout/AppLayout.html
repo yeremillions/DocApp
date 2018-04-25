@@ -1,0 +1,21 @@
+    <body>
+    {{renderPage}}
+    {{> bertAlert}}
+    </body>
+
+    <template name="AppLayout">
+        <main id="panel">
+            <header>
+                <button id="togglebtn">☰</button>
+            </header>
+        </main>
+        <div class="container">
+            {{> menu}}
+            <div class="row">
+                <div class="col-xs-12">
+                    {{> yield}}
+                </div>
+            </div>
+        </div>
+        {{> footer}}
+    </template>
